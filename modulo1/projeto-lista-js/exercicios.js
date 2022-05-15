@@ -47,6 +47,7 @@ function calculaIMC(peso,altura) {
   altura = Number(prompt("Digite a sua altura."));
   const resultado = peso / (altura*altura);
   const imcFinal = resultado.toFixed(1);
+  
 
   return (console.log(imcFinal));
   //Fiz o teste no console e funcionou mas na correção automatica esta dado erro.
