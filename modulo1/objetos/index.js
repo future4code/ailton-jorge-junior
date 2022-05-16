@@ -95,3 +95,63 @@ function encherCarrinho(objeto1,objeto2,objeto3){
 }
 
 encherCarrinho(fruta01,fruta02,fruta03)
+
+// Desafio 01
+
+function informacoesUsuario(){
+    const usuario ={
+    Nome: prompt("Qual o seu nome ?"),
+    Profissao: prompt("Qual a sua profissão ?"),
+    Idade: Number(prompt("Qual a sua idade ?"))
+    }
+    console.log(usuario)
+
+}
+informacoesUsuario();
+
+// Desafio 02
+
+const filme1={
+    nome: "Java",
+    anoLancamento: 2010
+}
+const filme2 = {
+    nome: "C#",
+    anoLancamento: 2010
+}
+function verificarFilme(obj1,obj2){
+    teste01 = filme1.anoLancamento < filme2.anoLancamento;
+    teste02 = filme1.anoLancamento === filme2.anoLancamento;
+
+   return console.log(" O primeiro filme foi lançado antes do segundo? " + teste01 +"\n"
+   +" O primeiro filme foi lançado no mesmo ano do segundo? " + teste02)
+   
+}
+verificarFilme(filme1,filme2)
+
+// Desafio 03
+
+let carrinho = [];
+const fruta01 ={
+    nome:"Mamão",
+    disponibilidade:"true"
+}
+const fruta02 ={
+    nome:"Manga",
+    disponibilidade:"true"
+}
+const fruta03 ={
+    nome:"Banana",
+    disponibilidade:"true"
+}
+function encherCarrinho(objeto1,objeto2,objeto3){
+    console.log(carrinho = [objeto1,objeto2,objeto3]);
+}
+function verificarFruta(objeto){
+  
+    
+    return console.log(objeto.nome, !objeto.disponibilidade)
+}
+encherCarrinho(fruta01,fruta02,fruta03)
+
+verificarFruta(fruta01)
