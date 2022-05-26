@@ -19,6 +19,7 @@ h2 {
 input {
     height: 20px;
     width: 500px;
+    border-bottom-width: 4px; /*9 - [Tela Comprar] Arrumar borda do campo de texto */
 }
 
 button:focus {
@@ -34,8 +35,11 @@ div>p:first-child {
 }
 
 div img {
-    background: black;
+    background-color: white; /* 7 - [Tela Comprar] Ao lado do campo de busca, deveria ter um ícone com uma imagem de lupa */
+    width: 100px;
+    height: 100px;  /* 6 - [Tela Comprar] As imagens da tabela não estão iguais */
 }
+
 
 .botao-amarelo {
     background-color: #ffaf43;
@@ -56,7 +60,8 @@ div img {
 }
 
 .icone {
-    height: 15px;
+    height: 30px;
+    width: 30px;
 }
 
 
@@ -103,21 +108,30 @@ div:nth-child(2),
 div:last-child {
     text-align: center;
 }
+ 
 
 table {
     width: 100%;
-    align-items: center;
+   align-items: center;  /*  11 - [Tela Comprar] Centralizar a tabela  */
 }
 td{
     
-    text-align: center; 5 -  /* [Tela Comprar] O texto da tabela está com a formatação errada */
+    text-align: center; /*5 - [Tela Comprar] O texto da tabela está com a formatação errada */
 }
 td button {
     background-color: #fadf63;
     width: 150px;
     height: 30px;
     border-radius: 5px;
-    color: black;
+    color: rgb(0, 0, 0);
+}
+td button:active {
+    color: white;/*  8 - [Tela Comprar] Colocar efeitos de clique e sobreposição nos botões
+ */
+}
+td button:hover {
+    background-color: #fe7e02; /*  8 - [Tela Comprar] Colocar efeitos de clique e sobreposição nos botões
+ */
 }
 
 .container-do-search {
