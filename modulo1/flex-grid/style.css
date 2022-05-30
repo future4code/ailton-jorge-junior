@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+   
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    background-color: mediumvioletred
+}
+.logo{
+    display: flex;
+    gap: 15px;
+}
+.cake{
+    width: 25px;
+    height: 25px;
+    
+}
+main {
+    
+    flex-grow: 1;
+    display: flex;
+}
+
+section {
+    
+    flex-grow: 1;
+}
+
+
+
+.bolo img {
+    width: 233px;
+}
+
+.sessao1{
+    background-color: #f2d0e0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:stretch;
+    gap: 20px;
+    justify-content: flex-start;
+}
+.menu{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between
+    
+}
+.menu img {
+    height: 25px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.seta{
+    margin-left: 100px;
+}
+
+.sessao2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 15px;
+}
+.bolo {
+    border-style:outset;
+    border-color: darkgray;
+    width: 238px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center
+}
+
+
+footer {
+    display: flex;
+    height: 8vh;
+    background-color: mediumvioletred;
+    justify-content: center;
+    
+}
+.rodape{
+    display: flex;
+    gap: 15px;
+}
+
