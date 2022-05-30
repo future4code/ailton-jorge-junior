@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box0;
+}
+
+.centro{
+    max-width: 1100px;
+    margin:0 auto;
+    padding: 0 2%;
+    display: flex;
+}
+header{
+    background-color: #7510F7;
+    padding: 20px 0;
+   
+}
+.logo{
+    color: #dbdbdb;
+}
+.menu{
+    width: 80%;
+    text-align: right;
+}
+.menu a{
+    color: #dbdbdb;
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+.menu a:hover{
+    color: black;
+}
+/* main*/
+
+.main{
+    width: 100%;
+    text-align: center;
+    margin: 60px 0 ;
+    
+}
+
+.main h1{
+    color: #14022b;
+    font-size: 35px;
+}
+.imagem{
+    margin-top: 60px;
+}
+.trabalhos{
+    margin: 90px;
+    width: 90%;
+    text-align: center;
+    display: flex;
+}
+.trabalhos a{
+    color:#dbdbdb;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 30px;
+    background-color: #7510F7;
+}
+.trabalhos a:hover{
+    color: black;
+}
+
+/* Depoimentos */
+
+.depoimentos{
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+.depoimentos p{
+    padding: 30px;
+    margin-top: 15px;
+    background-color: #7510F7;
+    color:#dbdbdb;
+}
+/*Rodape*/
+
+.footer{
+    background-color: #7510F7;
+}
+.footer h2{
+    text-align: center;
+    padding: 30px;
+    margin-top: 15px;
+    color:#dbdbdb;
+}
+.rede-social {
+    
+    display: flex;
+}
+.rede-social img{    
+    padding: 20px;
+    width: 50px;
+    height: 50px;      
+}
+/* Formulario */
+form{
+    
+    margin: 20px;
+    padding: 0 2%;
+    align-items:center;
+    
+}
+form label{
+    color: #7510F7;
+    font-size: 25px;
+   
+      
+}
+#btc{
+    color: #dbdbdb;
+    font-size: 25px;
+    background-color: #7510F7;
+    border-color: #7510F7;
+    padding: 10px;      
+}
+
+/* Sobre */
+
+.sobre h1{
+    margin-top: 40px;
+    font-size: 70px ;
+}
+
+.sobre p{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 35px ;
+    margin-top: 20px;
+    text-align: justify;
+    color:#7510F7;
+
+}
