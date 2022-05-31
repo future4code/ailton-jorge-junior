@@ -12,4 +12,5 @@ function calculaNota(ex, p1, p2) {
     return "D"
   }
 }
+
 ˋˋˋ
