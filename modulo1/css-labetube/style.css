@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {    
+    grid-area: head;
+    display:flex;
+    justify-content:space-between;
+    background-color: orange;
+    align-items:center;
+    
+}
+main{
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:stretch;
+    gap: 20px;
+    justify-content: flex-start;
+    margin: 40px;
+    
+    gap: 15px;
+    align-items: center;
+}
+video{
+    width: 640px;
+    height: 360px;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    align-items:flex-start;
+    
+}
+img{
+    width: 300px;
+    height: 200px;
+}
+textarea{
+    font-size: 15px;
+}
+.video p{
+    padding: 10px;
+}
+footer{
+    grid-area: foot;
+    display:flex;
+    justify-content:center;
+    background-color: rgb(22, 51, 41);
+    
+    color: white;
+}
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 10vh 20vh 20vh 20vh 20vh 10vh;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 'head head head head head head head head'
+                         'main main main main main main main main'
+                         'main main main main main main main main'
+                         'main main main main main main main main'
+                         'main main main main main main main main'
+                         'foot foot foot foot foot foot foot foot';
+}
