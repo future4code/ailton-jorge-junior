@@ -7,15 +7,20 @@ class App extends React.Component {
   state={
     escolhetela:'telainicial'
   }
-  mudaTela = () => {    
+  mudaTela1 = () => {    
       return this.setState ({escolhetela: 'teladetalhada'
       })
       
   }
+  mudaTela2 = () => {    
+    return this.setState ({escolhetela: 'telainicial'
+    })
+    
+}
   render(){
   return (
     <div>
-      {this.state.escolhetela === 'telainicial' ? <TelaInicial mudaTela = {this.mudaTela}/> : <TelaDetalhada mudaTela = {this.mudaTela}/>}
+      {this.state.escolhetela === 'telainicial' ? <TelaInicial mudaTela1 = {this.mudaTela1}/> : <TelaDetalhada mudaTela2 = {this.mudaTela2}/>}
      
     </div>
   );
