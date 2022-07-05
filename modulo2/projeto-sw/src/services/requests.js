@@ -2,7 +2,7 @@ import axios from "axios"
 import { BASE_URL } from '../constants/urls'
 
 export const getCharacterList = (saveData) => {
-    axios.get(`${BASE_URL}/api/people`)
+    axios.get(`${BASE_URL}people`)
     .then((res) => saveData(res.data.results))
     .catch((err) => console.log(err.response))
 }
