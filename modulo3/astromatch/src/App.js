@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import TelaInicial from './components/TelaInicial';
+import TelaMatches from './components/TelaMatches';
+import Header from './components/Header';
+import React, {useState} from "react";
+
+
+
 
 function App() {
+
+  const [tela, setTelas] = useState(true);
+  
+
+  const mudarTela = () =>{
+    if (tela === true) {
+      return <TelaInicial />
+    } else if (tela === false){
+      return <TelaMatches />
+    }
+  }
+  const onClickMudarTela = () => {
+    setTelas(!tela)
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+    <div id="base" style={{fontFamily: 'Spartan'}}>
+
+      <div id="App">
+          <Header onClickMudarTela={onClickMudarTela} tela={tela}/>
+
+        {mudarTela()}
+      </div>
+
     </div>
   );
 }
-
 export default App;
