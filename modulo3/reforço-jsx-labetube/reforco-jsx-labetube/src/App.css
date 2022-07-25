@@ -1,0 +1,81 @@
+.App {
+margin: 0;
+padding: 0;
+}
+
+
+.App-header {
+  background-color: orange;
+  height:75px;
+  
+}
+
+
+.header-components{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin: 0 55px ; 
+  margin-bottom: 0%;
+  align-items: center;
+}
+
+.header-components input{
+  height: 20px;
+  
+}
+.container-nav-main{
+  display: flex;
+  flex-direction: row;
+}
+.menu-containe{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: solid 1px rgb(186, 186, 185);
+  width: 20%;
+  max-width: 180px;
+  height: 610px;
+  border-top: 0;
+  padding: 0 0 0 30px;
+ 
+}
+.menu-01{
+  border-bottom: solid 1px rgb(186, 186, 185);
+}
+.menu-01 p{
+  margin: 2px;
+}
+.menu-02 p{
+  margin: 2px;
+}
+.videos-container{
+  display:flex ;
+  flex-direction: row;
+  width: 1800px;
+  align-items: flex-start;
+  flex-wrap:wrap;
+}
+.card-video {
+  border: solid 1px black;
+  width: 20%;
+  height: 40%;
+  margin:20px 0px 20px 10px;
+}
+.card-video  img{ 
+  width: 100%;
+  height: 70%;
+ 
+}
+.card-video  h4{ 
+ margin-left: 20px;
+ 
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  background-color: grey ;
+  width: 100%;
+  height: 60px;
+}
